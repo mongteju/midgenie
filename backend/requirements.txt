@@ -1,0 +1,10 @@
+# backend/requirements.txt
+# Python dependencies for the backend
+
+fastapi
+uvicorn
+python-dotenv
+SQLAlchemy
+passlib[bcrypt]
+python-jose[cryptography]
+# Add other dependencies as needed, e.g., pandas, openpyxl for grade file processing

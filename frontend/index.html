@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주도 고등학교 입시 예측 시스템</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>제주도 고등학교 입시 예측 시스템</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>엑셀 파일 업로드</h2>
+            <p>학생들의 정보가 담긴 엑셀 파일을 업로드해주세요.</p>
+            <input type="file" id="excelFile" accept=".xlsx, .xls">
+            <button id="uploadButton">업로드</button>
+            <div id="uploadStatus"></div>
+        </section>
+
+        <section id="results-section" style="display:none;">
+            <h2>입시 예측 결과</h2>
+            <div id="totalApplicants"></div>
+            <div id="studentRank"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 제주도 고등학교 입시 예측 시스템</p>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
